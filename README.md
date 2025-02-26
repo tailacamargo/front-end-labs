@@ -1,2 +1,3 @@
 # front-end-labs
-repositório dos laboratórios da disciplina de programação front-end
+<h1>[TADS]</h1>
+<h2>repositório dos laboratórios da disciplina de programação front-end</h2>
