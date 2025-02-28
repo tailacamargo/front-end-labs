@@ -1,0 +1,18 @@
+body{
+    background-color: white;
+    font-family: "lucida sans unicode", "lucida  Grande", sans-serif;
+}
+h1{
+    background-image: url(logo.png);
+}
+h2{
+    border-bottom: 2px groove #333333;
+}
+figure{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+figcaption{
+    font-style: italic;
+}
