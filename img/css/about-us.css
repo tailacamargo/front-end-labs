@@ -1,7 +1,16 @@
-body{
-    background-color: white;
-    font-family: "lucida sans unicode", "lucida  Grande", sans-serif;
+:root{
+    --color-base: #220369;
+    --color-base-figure-backgroud:var(--color-base)
 }
+
+body{
+    color: var(--color-base);
+    background-color: white;
+   font-family:"Oswald" 'Courier New', Courier, monospace;
+   font-weight: 300;
+   
+  }
+
 h1{
     background-image: url(logo.png);
     border-bottom: 2px groove #333333;
@@ -13,11 +22,12 @@ h2{
     
 }
 figure{
-    background-color: transparent;
+    background-color: transparent var(--color-base-figure-backgroud);
     border: 1px solid #ccc;
     text-align: center;
 }
 figcaption{
     font-style: italic; 
     margin-top: 10px;
+
 }
