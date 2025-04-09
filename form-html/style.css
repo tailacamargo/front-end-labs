@@ -1,0 +1,71 @@
+:root {
+--prymary-color: #390dfc;
+--secundary-color: rgb(247, 3, 3);
+--font-family: Verdana, Geneva, tahoma;
+--tex-button-color: white;
+--font-size-medium: medium;
+--font-size-large: large;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+body{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+fieldset {
+    margin-bottom: 10px;
+    background-color: var(--backgraud-color);
+    border-radius: 5px;
+}
+fieldset legend {
+    font-weight: bold;
+}
+fieldset input, select {
+    font-size: var(--font-size-medium);
+}
+.grid-button-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5px 0;
+
+}
+.grid-button-container input {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--tex-button-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+ .grid-button-container input [type=submit] {
+    background-color: var(--prymary-color);
+ }
+ .grid-button-container input [type=submit] {
+    background-color: var(--secundary-color);
+ }
+ .grid-button-container input :focus{
+    outline: 2px solid black;
+ }
+
+ .grid-header-container {
+    display: grid;
+    grid-template-areas: 'top left top right' ;
+    border-bottom: black 5px solid;
+    margin-bottom: 5px;
+ }
+
+ .top-left {
+    grid-area: top-left;
+    justify-self: left;
+ }
+.top-right {
+    grid-area: top-rigth;
+    justify-self: left;
+}
