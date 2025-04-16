@@ -1,0 +1,54 @@
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins","sans-serif";
+   
+}
+ 
+body {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding: 0 20px;
+   flex-wrap: wrap; 
+}
+.card {
+display: grid;
+place-items: center;
+gap: 10px;
+max-width: var(--card-widith);
+height: var(--card-height);
+padding: var(--card-padding);
+border-radius: 5px;
+background-color: white;
+font-size: 100%;
+text-align: center ;
+overflow: hidden;
+transition: box-shadow 0.3s ease, transform 0.3 ease;
+}
+.card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 20px;
+}
+.card h2 {
+    margin: 0;
+    text-shadow: 1px 1px 2px gray;
+}
+.card var {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-style: normal;
+    transition:  font-size 0.3 ease;
+}
+.card:hover var {
+    font-size: 45px;
+}
+.card var small {
+    font-size: 16px;
+}
+abbr[title]
+cursor: help
