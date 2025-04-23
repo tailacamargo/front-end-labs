@@ -14,12 +14,7 @@ body{
    margin-right: auto;
    width: 940px;
   }
-  @media (max-width: 480px) {
-    body {
-      background-color: #a51616;
-      font-size: 14px;
-  }
-}/* CSS Responsivo */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -73,39 +68,6 @@ a:hover {
   font-size: 0.8em;
 }
 
-@media (max-width: 450px) {
-  h1 {
-      font-size: 1.4em;
-  }
-
-  p, ul {
-      font-size: 0.9em;
-  }
-
-  #rodape {
-      font-size: 0.7em;
-  }
-
-  figure {
-      text-align: center;
-  }
-
-  figure img {
-      max-width: 100%;
-      height: auto;
-  }
-
-  /* Ajustes no layout geral */
-  body {
-      padding: 5px;
-  }
-
-  .container {
-      padding: 0;
-  }
-}
-
-
 h1{
     background-image: url(logo.png);
     border-bottom: 2px groove #333333;
@@ -129,5 +91,52 @@ figcaption{
     margin-top: 10px;
 
 }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+      font-size: 1.8em;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  #rodape {
+      text-align: center;
+      font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .container {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  ul {
+      padding: 0;
+      list-style-position: inside;
+  }
+
+  #rodape {
+      font-size: 12px;
+      text-align: center;
+  }
+  header img{
+    display: none;
+  }
+}
+
     
   
