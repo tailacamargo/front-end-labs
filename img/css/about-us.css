@@ -1,5 +1,5 @@
 :root{
-    --color-base: #220369;
+    --color-base: #080808;
     --color-base-figure-backgroud:var(--color-base);
     --font-base: "roboto" , sans -serif;
     --font-base-weigth: 300;
@@ -12,28 +12,122 @@ body{
    font-weight: 300;
    margin-left: auto;
    margin-right: auto;
-   width: 940px
-   ;
-   
+   width: 940px;
   }
+  @media (max-width: 480px) {
+    body {
+      background-color: #a51616;
+      font-size: 14px;
+  }
+}/* CSS Responsivo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+p, ul {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #4e89ae;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#rodape {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.8em;
+}
+
+@media (max-width: 450px) {
+  h1 {
+      font-size: 1.4em;
+  }
+
+  p, ul {
+      font-size: 0.9em;
+  }
+
+  #rodape {
+      font-size: 0.7em;
+  }
+
+  figure {
+      text-align: center;
+  }
+
+  figure img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* Ajustes no layout geral */
+  body {
+      padding: 5px;
+  }
+
+  .container {
+      padding: 0;
+  }
+}
+
 
 h1{
     background-image: url(logo.png);
     border-bottom: 2px groove #333333;
 }
+
 h2{
     border-bottom: 2px groove #333333; 
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
 }
+
 figure{
     background-color: transparent var(--color-base-figure-backgroud);
     border: 1px solid #ccc;
     text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 figcaption{
     font-style: italic; 
     margin-top: 10px;
 
 }
+    
+  
