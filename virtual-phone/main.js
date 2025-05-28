@@ -10,4 +10,10 @@ teclas[0].onclick =() => {
     valorTeclaToDisplay(0);
 }
 limpar.onClick = () =
-//tarefinha: Criar uma condição para travar mais de 14 digitos 
+//tarefinha: Criar uma condição para travar mais de 14 digitos
+function ValorTeclaToDisplay (i) {
+    if (display.value.length < 14) {
+        display.value += teclas [i]. value;
+    }
+   
+}  
