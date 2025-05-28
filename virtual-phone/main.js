@@ -1,15 +1,34 @@
-const display = document.querySelector('input[type=tell]');
-const teclas = document.querySelectorAll('input[type=button]');
-function ValorTeclaToDisplay (i) {
-    display.value += teclas[i].value;
+const display = 
+    document.querySelector('input[type=tel]');
+
+const teclas = 
+    document.querySelectorAll('input[type=button]');
+
+const limpar = document.querySelector('.icon');
+
+const limiteNumeros = 14; 
+
+limpar.onclick = () => {
+    const opcao = confirm('Deseja mesmo limpar?');
+    if (opcao) {
+        display.value = "";
+    }    
 }
-for(let i =0; index < teclas.length; i++){
-console.log(teclas[i].value)
+
+function valorTeclaToDisplay (i) {
+    if (display.value.length < limiteNumeros) {
+        display.value += teclas[i].value;
+    }    
 }
-teclas[0].onclick =() => {
-    valorTeclaToDisplay(0);
+
+
+for(let i = 0; i < teclas.length; i++){
+    teclas[i].onclick = () => {
+        valorTeclaToDisplay(i);
+    }
 }
-limpar.onClick = () =
+
+
 //tarefinha: Criar uma condição para travar mais de 14 digitos
 function ValorTeclaToDisplay (i) {
     if (display.value.length < 14) {
